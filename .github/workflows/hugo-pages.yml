@@ -30,7 +30,9 @@ jobs:
       - name: Build site
         working-directory: Website
         run: |
-          hugo --minify --themesDir ../Template --theme gohugo-theme-ananke
+  hugo --minify --cleanDestinationDir \
+    --baseURL "https://integral-dragon.github.io/" \
+    --themesDir ../Template --theme gohugo-theme-ananke
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
