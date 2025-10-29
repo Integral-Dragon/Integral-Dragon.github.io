@@ -1,4 +1,7 @@
 baseURL = "https://integral-dragon.github.io/"
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = "en-us"
+title = "Integral Dragon"
 themesDir = "../Template"
+theme = "gohugo-theme-ananke"
+paginate = 10
+enableRobotsTXT = true
