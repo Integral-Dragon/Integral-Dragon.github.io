@@ -3,14 +3,6 @@ title: "Integral Dragon"
 description: "AI Acceleration Consultancy - Engineering is 'Almost' All You Need"
 ---
 
-# Integral Dragon
-
-**AI Acceleration Consultancy**
-
-*Engineering is 'Almost' All You Need*
-
----
-
 ## Who We Are
 
 Integral Dragon is a software engineering transformation consultancy based in Minneapolis, Minnesota, specializing in building operational excellence for enterprise technology organizations. We work with US-based companies across industries to strengthen their engineering foundations through strategic improvements to People, Process, and Technology—then accelerate their business value through intelligent AI integration.
