@@ -3,5 +3,7 @@ languageCode = "en-us"
 title = "Integral Dragon"
 themesDir = "../Template"
 theme = "gohugo-theme-ananke"
-paginate = 10
 enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
