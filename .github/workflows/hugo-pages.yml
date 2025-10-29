@@ -28,11 +28,14 @@ jobs:
           extended: true
 
       - name: Build site
-        working-directory: Website
-        run: |
-  hugo --minify --cleanDestinationDir \
-    --baseURL "https://integral-dragon.github.io/" \
-    --themesDir ../Template --theme gohugo-theme-ananke
+  	working-directory: Website
+  	run: |
+    		hugo --minify \
+        	--cleanDestinationDir \
+        	--baseURL "https://integral-dragon.github.io/" \
+         	--themesDir ../Template \
+         	--theme gohugo-theme-ananke
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
