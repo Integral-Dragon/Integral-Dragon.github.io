@@ -10,3 +10,8 @@ enableRobotsTXT = true
 
 [params]
   site_logo = "images/ID small logo.png"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
