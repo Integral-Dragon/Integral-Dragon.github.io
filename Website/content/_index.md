@@ -138,7 +138,7 @@ Founder and technical leader with deep expertise in platform engineering, distri
 Operational leader ensuring seamless engagement execution and strategic alignment across all client initiatives.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/team/danny-hoyt.png" alt="Danny Hoyt" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 60%; display: block; margin: 0 auto 1rem auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+  <img src="/images/team/danny-hoyt.png" alt="Danny Hoyt" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 42%; display: block; margin: 0 auto 1rem auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
 </div>
 
 ### Danny Hoyt, Enterprise Learning Strategist
