@@ -7,3 +7,6 @@ enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
+
+[params]
+  site_logo = "images/ID small logo.png"
