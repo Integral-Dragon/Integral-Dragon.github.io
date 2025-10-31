@@ -25,9 +25,7 @@ Our methodology combines proven software engineering excellence with modern AI c
 
 ---
 
-## Our Strategic Framework: The 5 D's
-
-We guide organizations through a proven transformation methodology:
+## Our Strategic Methodology
 
 ### Discover
 Identify opportunities through data-driven assessment of your current state. We quantify value, map processes, and understand where engineering excellence can unlock business growth.
