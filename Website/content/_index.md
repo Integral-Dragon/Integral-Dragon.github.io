@@ -74,36 +74,20 @@ Architecture excellence, platform development, operational observability, infras
 
 We track transformation through three interconnected metric categories:
 
-### Business Metrics
-- Value booked with the CFO
-- Cost of implementation
-- Value per engineer ratio
-- Per-transaction cost trends
+**Business Metrics**
+Value booked with the CFO, cost of implementation, value per engineer ratio, and per-transaction cost trends.
 
-### Engineering Metrics (DORA)
-- Deployment frequency
-- Lead time for changes
-- Change failure rate
-- Mean time to restore
-- Bad engineering days
+**Engineering Metrics (DORA)**
+Deployment frequency, lead time for changes, change failure rate, mean time to restore, and bad engineering days.
 
-### AI Acceleration Metrics
-- AI-assisted productivity realized
-- Code suggestions vs. acceptance rates
-- Percentage of AI-generated code
+**AI Acceleration Metrics**
+AI-assisted productivity realized, code suggestions vs. acceptance rates, and percentage of AI-generated code.
 
 ---
 
 ## Typical Deliverables
 
-When you engage with Integral Dragon, expect comprehensive, implementation-ready work products:
-
-- **Maturity Assessments** with data-driven scoring and visual roadmaps
-- **Automation & Platform Designs** with complete technical specifications
-- **18-Month Transformation Roadmaps** with clear milestones and ROI projections
-- **Skills Gap Analysis** with learning pathways and enablement plans
-- **Organizational Change Management Plans** ensuring sustainable adoption
-- **Metrics Dashboards** demonstrating week-over-week progress
+When you engage with Integral Dragon, expect comprehensive, implementation-ready work products including **Maturity Assessments** with data-driven scoring and visual roadmaps, **Automation & Platform Designs** with complete technical specifications, **18-Month Transformation Roadmaps** with clear milestones and ROI projections, **Skills Gap Analysis** with learning pathways and enablement plans, **Organizational Change Management Plans** ensuring sustainable adoption, and **Metrics Dashboards** demonstrating week-over-week progress.
 
 ---
 
