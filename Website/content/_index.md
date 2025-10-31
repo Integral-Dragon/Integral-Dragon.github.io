@@ -128,7 +128,7 @@ Integral Dragon is industry-agnostic, bringing deep engineering expertise to org
 ## Core Team
 
 <div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/team/dragon-sky.png" alt="Dragon Sky" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 100%; display: block; margin: 0 auto 1rem auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+  <img src="/images/team/dragon-sky.png" alt="Dragon Sky" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 0%; display: block; margin: 0 auto 1rem auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
 </div>
 
 ### Dragon Sky, Principal & Technical Fellow
