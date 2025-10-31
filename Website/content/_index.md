@@ -74,13 +74,13 @@ Architecture excellence, platform development, operational observability, infras
 
 We track transformation through three interconnected metric categories:
 
-**Business Metrics**
+### Business Metrics
 Value booked with the CFO, cost of implementation, value per engineer ratio, and per-transaction cost trends.
 
-**Engineering Metrics (DORA)**
+### Engineering Metrics (DORA)
 Deployment frequency, lead time for changes, change failure rate, mean time to restore, and bad engineering days.
 
-**AI Acceleration Metrics**
+### AI Acceleration Metrics
 AI-assisted productivity realized, code suggestions vs. acceptance rates, and percentage of AI-generated code.
 
 ---
