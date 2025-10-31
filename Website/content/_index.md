@@ -75,28 +75,22 @@ Architecture excellence, platform development, operational observability, infras
 We track transformation through three interconnected metric categories:
 
 ### Business Metrics
-<ul style="margin-left: 1.5rem;">
-<li>Value booked with the CFO</li>
-<li>Cost of implementation</li>
-<li>Value per engineer ratio</li>
-<li>Per-transaction cost trends</li>
-</ul>
+- Value booked with the CFO
+- Cost of implementation
+- Value per engineer ratio
+- Per-transaction cost trends
 
 ### Engineering Metrics (DORA)
-<ul style="margin-left: 1.5rem;">
-<li>Deployment frequency</li>
-<li>Lead time for changes</li>
-<li>Change failure rate</li>
-<li>Mean time to restore</li>
-<li>Bad engineering days</li>
-</ul>
+- Deployment frequency
+- Lead time for changes
+- Change failure rate
+- Mean time to restore
+- Bad engineering days
 
 ### AI Acceleration Metrics
-<ul style="margin-left: 1.5rem;">
-<li>AI-assisted productivity realized</li>
-<li>Code suggestions vs. acceptance rates</li>
-<li>Percentage of AI-generated code</li>
-</ul>
+- AI-assisted productivity realized
+- Code suggestions vs. acceptance rates
+- Percentage of AI-generated code
 
 ---
 
@@ -104,14 +98,12 @@ We track transformation through three interconnected metric categories:
 
 When you engage with Integral Dragon, expect comprehensive, implementation-ready work products:
 
-<ul style="margin-left: 1.5rem;">
-<li><strong>Maturity Assessments</strong> with data-driven scoring and visual roadmaps</li>
-<li><strong>Automation & Platform Designs</strong> with complete technical specifications</li>
-<li><strong>18-Month Transformation Roadmaps</strong> with clear milestones and ROI projections</li>
-<li><strong>Skills Gap Analysis</strong> with learning pathways and enablement plans</li>
-<li><strong>Organizational Change Management Plans</strong> ensuring sustainable adoption</li>
-<li><strong>Metrics Dashboards</strong> demonstrating week-over-week progress</li>
-</ul>
+- **Maturity Assessments** with data-driven scoring and visual roadmaps
+- **Automation & Platform Designs** with complete technical specifications
+- **18-Month Transformation Roadmaps** with clear milestones and ROI projections
+- **Skills Gap Analysis** with learning pathways and enablement plans
+- **Organizational Change Management Plans** ensuring sustainable adoption
+- **Metrics Dashboards** demonstrating week-over-week progress
 
 ---
 
