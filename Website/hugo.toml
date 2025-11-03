@@ -12,7 +12,12 @@ enableRobotsTXT = true
   site_logo = "images/ID small logo.png"
 
 [[menus.main]]
-  name = "Whitepapers"
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "White Papers"
   url = "/whitepapers/"
   weight = 50
 
