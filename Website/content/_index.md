@@ -131,7 +131,7 @@ Organizational development expert with decades of consulting experience, designi
 ### Justin Schmidt, Platform Architect
 Senior engineering leader with decades of software engineering and consulting experience, driving technical excellence across client engagements.
 
-### Russ Jury, Platform Lead Engineer
+### Russ J., Platform Lead Engineer
 Engineering specialist delivering robust, scalable solutions aligned with industry best practices.
 
 ### Casey Hyde, Platform Lead Engineer
@@ -145,9 +145,6 @@ Engineering specialist focused on implementing automation, platform capabilities
 
 ### Schedule a Discovery Session
 Email us at **admin@integraldragon.com** to discuss your transformation opportunities.
-
-### Read Our Whitepaper
-Download **"Engineering is (Almost) All You Need: Leveraging Agentic AI for Business Process Automation"** to understand our perspective on combining engineering excellence with AI acceleration.
 
 ---
 
