@@ -11,6 +11,11 @@ enableRobotsTXT = true
 [params]
   site_logo = "images/ID small logo.png"
 
+[[menus.main]]
+  name = "Whitepapers"
+  url = "/whitepapers/"
+  weight = 50
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
