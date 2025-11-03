@@ -85,6 +85,14 @@ description: "Technical whitepapers and research publications from Integral Drag
   font-style: italic;
   color: #555;
 }
+
+.whitepaper-content ul li {
+  margin-bottom: 1rem;
+}
+
+.whitepaper-content ul li:last-child {
+  margin-bottom: 0;
+}
 </style>
 
 <div class="whitepaper-container">
@@ -95,8 +103,8 @@ description: "Technical whitepapers and research publications from Integral Drag
 <div class="whitepaper-content">
 
 <div class="whitepaper-meta">
-<span><strong>Authors:</strong> Integral Dragon Research Team</span>
-<span><strong>Date:</strong> 2024</span>
+<span><strong>Author:</strong> Dragon Sky</span>
+<span><strong>Date:</strong> 2025</span>
 </div>
 
 <h2>Introduction</h2>
