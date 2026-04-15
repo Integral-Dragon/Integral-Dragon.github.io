@@ -109,7 +109,7 @@ main.pb7 { padding-bottom: 0 !important; }
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
-.id-eyebrow-hero { color: rgba(255,255,255,0.42); margin-bottom: 44px; }
+.id-eyebrow-hero { color: rgba(255,255,255,0.75); margin-bottom: 44px; }
 .id-eyebrow-section { color: #999; margin-bottom: 16px; }
 .id-eyebrow-dark { color: rgba(255,255,255,0.38); margin-bottom: 16px; }
 
@@ -119,13 +119,11 @@ main.pb7 { padding-bottom: 0 !important; }
 .id-hero-logo img {
   max-width: 160px;
   height: auto;
-  filter: invert(1);
   display: block;
   margin: 0 auto;
-  background: #000;
 }
 .id-hero h1 {
-  font-size: clamp(45px, 7.5vw, 75px);
+  font-size: clamp(38px, 6.4vw, 64px);
   font-weight: 700;
   color: #fff;
   line-height: 1.1;
@@ -133,7 +131,7 @@ main.pb7 { padding-bottom: 0 !important; }
   margin: 0 0 22px;
 }
 .id-hero-sub {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.72;
   color: rgba(255,255,255,0.6);
   max-width: 580px;
@@ -144,6 +142,12 @@ main.pb7 { padding-bottom: 0 !important; }
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
+}
+/* Hero buttons slightly smaller than global button size */
+.id-hero-ctas .id-btn-primary,
+.id-hero-ctas .id-btn-ghost {
+  font-size: 20px;
+  padding: 13px 28px;
 }
 
 /* Buttons */
