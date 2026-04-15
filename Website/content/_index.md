@@ -5,7 +5,7 @@ description: "AI Acceleration Consultancy - Engineering is 'Almost' All You Need
 
 ## Who We Are
 
-Integral Dragon is a software engineering transformation consultancy based in Minneapolis, Minnesota, specializing in building operational excellence for enterprise technology organizations. We work with US-based companies across industries to strengthen their engineering foundations through strategic improvements to People, Process, and Technology—then accelerate their business value through intelligent AI integration.
+Integral Dragon is a software engineering transformation consultancy specializing in building operational excellence for enterprise technology organizations. We work with US-based companies across industries to strengthen their engineering foundations through strategic improvements to People, Process, and Technology—then accelerate their business value through intelligent AI integration.
 
 Founded in 2025 by Dragon Sky, a former Platform Engineer at UnitedHealth Group with deep expertise in distributed systems, platforming, cloud architecture, and building high-performing engineering cultures, Integral Dragon brings decades of collective software engineering and consulting experience to every engagement.
 
@@ -150,4 +150,3 @@ Email us at **admin@integraldragon.com** to discuss your transformation opportun
 
 *©2025 Integral Dragon, LLC – All rights reserved*
 
-*Based in Minneapolis, Minnesota*
