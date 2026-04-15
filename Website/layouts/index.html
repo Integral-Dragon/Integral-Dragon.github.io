@@ -1,0 +1,668 @@
+{{ define "head" }}
+<style>
+/* ============================================================
+   Integral Dragon — Homepage Styles
+   ============================================================ */
+
+/* Reset & base */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #000; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+               Helvetica, Arial, sans-serif;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+}
+/* Override Ananke/Tachyons defaults leaking into the homepage */
+body.avenir { font-family: inherit; }
+main.pb7 { padding-bottom: 0 !important; }
+
+/* Design tokens */
+:root {
+  --max-w:       1100px;
+  --radius:      12px;
+  --pill:        9999px;
+  --sv:          88px;   /* section vertical padding */
+  --sh:          28px;   /* section horizontal padding */
+  --white:       #fff;
+  --off-white:   #f9f9f9;
+  --light-sec:   #f4f4f4;
+}
+
+/* ---- Nav ---------------------------------------- */
+.id-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #000;
+  border-bottom: 1px solid #1c1c1c;
+}
+.id-nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--sh);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.id-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.id-nav-logo {
+  height: 28px;
+  width: auto;
+  filter: invert(1);
+  display: block;
+}
+.id-nav-name {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.id-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.id-nav-links a {
+  color: rgba(255,255,255,0.62);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.id-nav-links a:hover { color: #fff; }
+.id-nav-cta {
+  background: #fff !important;
+  color: #000 !important;
+  padding: 8px 18px !important;
+  border-radius: var(--pill) !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+}
+.id-nav-cta:hover { background: #e0e0e0 !important; }
+
+/* ---- Hero --------------------------------------- */
+.id-hero {
+  background: #000;
+  padding: 92px var(--sh) 84px;
+  text-align: center;
+}
+.id-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.id-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.id-eyebrow-hero { color: rgba(255,255,255,0.42); margin-bottom: 44px; }
+.id-eyebrow-section { color: #999; margin-bottom: 16px; }
+.id-eyebrow-dark { color: rgba(255,255,255,0.38); margin-bottom: 16px; }
+
+.id-hero-logo {
+  margin-bottom: 44px;
+}
+.id-hero-logo img {
+  max-width: 160px;
+  height: auto;
+  filter: invert(1);
+  display: block;
+  margin: 0 auto;
+}
+.id-hero h1 {
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 22px;
+}
+.id-hero-sub {
+  font-size: 18px;
+  line-height: 1.72;
+  color: rgba(255,255,255,0.6);
+  max-width: 580px;
+  margin: 0 auto 40px;
+}
+.id-hero-ctas {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.id-btn-primary {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 13px 28px;
+  border-radius: var(--pill);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  transition: background 0.15s;
+}
+.id-btn-primary:hover { background: #e0e0e0; }
+.id-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: var(--pill);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1;
+  transition: border-color 0.15s, background 0.15s;
+}
+.id-btn-ghost:hover {
+  border-color: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.05);
+}
+.id-btn-dark {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: var(--pill);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+  transition: background 0.15s;
+}
+.id-btn-dark:hover { background: #333; }
+
+/* ---- Proof bar ---------------------------------- */
+.id-proof-bar {
+  background: #080808;
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+.id-proof-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.id-proof-cell {
+  padding: 26px 28px;
+  border-right: 1px solid #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.id-proof-cell:last-child { border-right: none; }
+.id-proof-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: rgba(255,255,255,0.3);
+}
+.id-proof-value {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.45;
+}
+
+/* ---- Sections ----------------------------------- */
+.id-section { padding: var(--sv) var(--sh); }
+.id-section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+.id-section-inner h2 {
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: #111;
+  margin: 0 0 22px;
+}
+.id-h2-light { color: #fff !important; }
+
+.id-section-body {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #4a4a4a;
+  max-width: 700px;
+  margin: 0;
+}
+.id-section-body + .id-section-body { margin-top: 18px; }
+.id-body-light { color: rgba(255,255,255,0.6) !important; }
+
+/* Section backgrounds */
+.id-problem       { background: #fff; }
+.id-differentiators { background: #0d0d0d; }
+.id-services      { background: #fff; }
+.id-approach      { background: var(--off-white); }
+.id-industries    { background: #111; }
+.id-team          { background: #fff; }
+.id-cta           { background: var(--light-sec); text-align: center; }
+
+/* ---- Cards -------------------------------------- */
+.id-card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 44px;
+}
+.id-card-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 44px;
+}
+.id-card-full-row { margin-top: 18px; }
+
+/* Light card */
+.id-card-l {
+  background: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  border-radius: var(--radius);
+  padding: 30px;
+}
+.id-card-l h3 {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+.id-card-l p {
+  font-size: 15px;
+  line-height: 1.72;
+  color: #555;
+  margin: 0;
+}
+
+/* Dark card */
+.id-card-d {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radius);
+  padding: 30px;
+}
+.id-card-d h3 {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+.id-card-d p {
+  font-size: 15px;
+  line-height: 1.72;
+  color: rgba(255,255,255,0.58);
+  margin: 0;
+}
+
+/* ---- Industry pills ----------------------------- */
+.id-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 30px 0;
+}
+.id-pill {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.72);
+  border-radius: var(--pill);
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ---- Team --------------------------------------- */
+.id-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 44px;
+}
+/* Center the lone card in the last row */
+.id-team-grid > .id-team-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 10px);
+}
+.id-team-card {
+  background: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  border-radius: var(--radius);
+  padding: 28px 30px;
+}
+.id-team-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+  margin-bottom: 16px;
+}
+.id-team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  user-select: none;
+}
+.id-team-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+.id-team-title {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin-bottom: 12px;
+}
+.id-team-card p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* ---- CTA ---------------------------------------- */
+.id-cta .id-section-inner { max-width: 620px; }
+.id-cta h2 { font-size: clamp(22px, 2.8vw, 34px) !important; }
+.id-cta .id-section-body { max-width: none; margin: 0 0 32px; color: #555; }
+.id-cta-email {
+  display: block;
+  margin-top: 22px;
+  font-size: 14px;
+  color: #888;
+}
+.id-cta-email a { color: #111; font-weight: 600; text-decoration: none; }
+.id-cta-email a:hover { text-decoration: underline; }
+
+/* ---- Footer ------------------------------------- */
+.id-footer {
+  background: #000;
+  text-align: center;
+  padding: 22px var(--sh);
+  border-top: 1px solid #1c1c1c;
+}
+.id-footer p { color: rgba(255,255,255,0.3); font-size: 13px; margin: 0; }
+
+/* ---- Responsive --------------------------------- */
+@media (max-width: 900px) {
+  :root { --sv: 64px; }
+  .id-card-grid-3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  :root { --sv: 52px; --sh: 20px; }
+  .id-nav-links a:not(.id-nav-cta) { display: none; }
+  .id-proof-grid { grid-template-columns: repeat(2, 1fr); }
+  .id-proof-cell:nth-child(2) { border-right: none; }
+  .id-proof-cell:nth-child(3) { border-right: 1px solid #1e1e1e; border-top: 1px solid #1e1e1e; }
+  .id-proof-cell:nth-child(4) { border-right: none; border-top: 1px solid #1e1e1e; }
+  .id-card-grid-2 { grid-template-columns: 1fr; }
+  .id-team-grid { grid-template-columns: 1fr; }
+  .id-team-grid > .id-team-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    max-width: none;
+  }
+}
+</style>
+{{ end }}
+
+{{ define "header" }}
+<header>
+  <!-- ========== NAV ========== -->
+  <nav class="id-nav">
+    <div class="id-nav-inner">
+      <a class="id-nav-brand" href="/">
+        <img src="/images/ID%20small%20logo.png" alt="Integral Dragon logo" class="id-nav-logo">
+        <span class="id-nav-name">Integral Dragon</span>
+      </a>
+      <div class="id-nav-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="/whitepapers/">White Papers</a>
+        <a href="#contact" class="id-nav-cta">Schedule a call ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="id-hero">
+    <div class="id-hero-inner">
+      <span class="id-eyebrow id-eyebrow-hero">Engineering Transformation &amp; AI Integration</span>
+      <div class="id-hero-logo">
+        <img src="/images/ID%20Optimized%20Logo.png" alt="Integral Dragon">
+      </div>
+      <h1>Fix the foundation. Then accelerate with AI.</h1>
+      <p class="id-hero-sub">Enterprise technology organizations hire us when their engineering is slow, manual, or tangled. We build and automate — then we teach your teams how we did it.</p>
+      <div class="id-hero-ctas">
+        <a href="#contact" class="id-btn-primary">Schedule a discovery session</a>
+        <a href="/whitepapers/" class="id-btn-ghost">Read our white papers</a>
+      </div>
+    </div>
+  </section>
+</header>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- ========== PROOF BAR ========== -->
+<section class="id-proof-bar">
+  <div class="id-proof-grid">
+    <div class="id-proof-cell">
+      <span class="id-proof-label">Engagement model</span>
+      <span class="id-proof-value">Fixed-bid, outcome-based</span>
+    </div>
+    <div class="id-proof-cell">
+      <span class="id-proof-label">Risk model</span>
+      <span class="id-proof-value">We go at-risk — paid on results</span>
+    </div>
+    <div class="id-proof-cell">
+      <span class="id-proof-label">Clients</span>
+      <span class="id-proof-value">Enterprise (1,000+ employees)</span>
+    </div>
+    <div class="id-proof-cell">
+      <span class="id-proof-label">Founded</span>
+      <span class="id-proof-value">2025 · US-based</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROBLEM ========== -->
+<section class="id-section id-problem" id="about">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-section">The problem we solve</span>
+    <h2>Enterprise engineering has a toil problem</h2>
+    <p class="id-section-body">Manual workflows. Unclear processes. Teams that want to adopt AI but don&rsquo;t know where to start — or can&rsquo;t distinguish what requires AI from what needs agents, automation, or just better engineering discipline. Leadership is frustrated. Velocity is low. The tools exist to fix it, but knowing how to apply them is the hard part.</p>
+    <p class="id-section-body">That&rsquo;s where we come in. We build the solutions ourselves — software, automation, AI-accelerated workflows — and once we&rsquo;ve delivered measurable results, we offer coaching and training so your teams can own it independently.</p>
+  </div>
+</section>
+
+<!-- ========== DIFFERENTIATORS ========== -->
+<section class="id-section id-differentiators">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-dark">What makes us different</span>
+    <h2 class="id-h2-light">We don&rsquo;t bill hours. We deliver outcomes.</h2>
+    <p class="id-section-body id-body-light">Most consultancies shift risk to you — fixed scope, hourly billing, your problem if it doesn&rsquo;t work. We do the opposite. We agree on the outcome, go at-risk, and get paid when we solve the problem we promised to solve.</p>
+    <div class="id-card-grid-3">
+      <div class="id-card-d">
+        <h3>At-risk engagement model</h3>
+        <p>Fixed-bid, outcome-based. We define the result upfront and aren&rsquo;t paid until we deliver it.</p>
+      </div>
+      <div class="id-card-d">
+        <h3>AI as accelerant, not bandaid</h3>
+        <p>We use AI as much as possible — but we know it can&rsquo;t fix bad engineering. We fix the foundation first.</p>
+      </div>
+      <div class="id-card-d">
+        <h3>We teach what we build</h3>
+        <p>After delivery, clients can engage us for coaching and training so your teams own the solution independently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="id-section id-services" id="services">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-section">Our services</span>
+    <h2>Three ways we engage.</h2>
+    <div class="id-card-grid-2">
+      <div class="id-card-l">
+        <h3>Workflow automation &amp; platform engineering</h3>
+        <p>We identify high-toil, high-value workflows and build the automation to eliminate them — using modern platform engineering and AI-accelerated development practices.</p>
+      </div>
+      <div class="id-card-l">
+        <h3>AI integration &amp; strategy</h3>
+        <p>From identifying where AI creates real leverage to implementing agents and LLM-powered tooling — we distinguish hype from value and build what actually moves the needle.</p>
+      </div>
+    </div>
+    <div class="id-card-full-row">
+      <div class="id-card-l">
+        <h3>Engineering coaching &amp; training</h3>
+        <p>Once we&rsquo;ve delivered, we offer hands-on coaching and structured training so your engineers understand how we built it, can maintain it, and can extend it independently. Knowledge transfer is built into how we work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== APPROACH ========== -->
+<section class="id-section id-approach" id="approach">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-section">Our approach</span>
+    <h2>People, process, and technology — in that order.</h2>
+    <p class="id-section-body">AI amplifies what&rsquo;s already there. We start by assessing and strengthening your engineering foundation across three dimensions — then we introduce AI strategically, measurably, and where it creates genuine business value.</p>
+    <div class="id-card-grid-2">
+      <div class="id-card-l">
+        <h3>People</h3>
+        <p>Organizational alignment, talent management, role clarity, and skills development pathways that build high-performing engineering cultures.</p>
+      </div>
+      <div class="id-card-l">
+        <h3>Process</h3>
+        <p>Portfolio management, product management discipline, cross-functional team effectiveness, and maturity assessments that identify optimization opportunities.</p>
+      </div>
+    </div>
+    <div class="id-card-full-row">
+      <div class="id-card-l">
+        <h3>Technology</h3>
+        <p>Architecture excellence, platform development, operational observability, infrastructure automation, and strategic AI integration — all built on sound distributed systems principles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INDUSTRIES ========== -->
+<section class="id-section id-industries">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-dark">Industries</span>
+    <h2 class="id-h2-light">Where we work.</h2>
+    <div class="id-pills">
+      <span class="id-pill">Healthcare technology</span>
+      <span class="id-pill">Pharmaceutical distribution</span>
+      <span class="id-pill">Revenue cycle management</span>
+      <span class="id-pill">Enterprise technology</span>
+      <span class="id-pill">Financial services</span>
+    </div>
+    <p class="id-section-body id-body-light">Our engagements span complex enterprise technology environments. Current clients include a leading pharmaceutical distribution organization and a healthcare technology platform serving revenue cycle management at scale.</p>
+  </div>
+</section>
+
+<!-- ========== TEAM ========== -->
+<section class="id-section id-team">
+  <div class="id-section-inner">
+    <span class="id-eyebrow id-eyebrow-section">Core team</span>
+    <h2>Who you&rsquo;re working with.</h2>
+    <div class="id-team-grid">
+
+      <div class="id-team-card">
+        <img src="/images/team/dragon-sky.png" alt="Dragon Sky" class="id-team-photo" style="object-position: center 0%;">
+        <h3>Dragon Sky</h3>
+        <span class="id-team-title">Principal &amp; Technical Fellow</span>
+        <p>Founder and technical leader with deep expertise in platform engineering, distributed systems, cloud architecture, and building high-performing engineering cultures.</p>
+      </div>
+
+      <div class="id-team-card">
+        <img src="/images/team/scott-reel.png" alt="Scott Reel" class="id-team-photo">
+        <h3>Scott Reel</h3>
+        <span class="id-team-title">Chief of Staff</span>
+        <p>Operational leader ensuring seamless engagement execution and strategic alignment across all client initiatives.</p>
+      </div>
+
+      <div class="id-team-card">
+        <div class="id-team-avatar">JS</div>
+        <h3>Justin Schmidt</h3>
+        <span class="id-team-title">Platform Architect</span>
+        <p>Senior engineering leader with decades of software engineering and consulting experience, driving technical excellence across client engagements.</p>
+      </div>
+
+      <div class="id-team-card">
+        <div class="id-team-avatar">CH</div>
+        <h3>Casey Hyde</h3>
+        <span class="id-team-title">Platform Lead Engineer</span>
+        <p>Engineering specialist focused on implementing automation, platform capabilities, and modern development workflows.</p>
+      </div>
+
+      <div class="id-team-card">
+        <div class="id-team-avatar">RJ</div>
+        <h3>Russ J.</h3>
+        <span class="id-team-title">Platform Lead Engineer</span>
+        <p>Engineering specialist delivering robust, scalable solutions aligned with industry best practices.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="id-section id-cta" id="contact">
+  <div class="id-section-inner">
+    <h2>Ready to reduce toil and accelerate your engineering?</h2>
+    <p class="id-section-body">Start with a no-commitment discovery session. We&rsquo;ll identify the highest-value opportunities in your organization and outline what a fixed-bid engagement could look like.</p>
+    <a href="mailto:admin@integraldragon.com" class="id-btn-dark">Schedule a discovery session</a>
+    <span class="id-cta-email">Or email us directly: <a href="mailto:admin@integraldragon.com">admin@integraldragon.com</a></span>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "footer" }}
+<footer class="id-footer">
+  <p>©2026 Integral Dragon, LLC – All rights reserved</p>
+</footer>
+{{ end }}
