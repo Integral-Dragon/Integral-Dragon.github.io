@@ -5,7 +5,7 @@ description: "AI Acceleration Consultancy - Engineering is 'Almost' All You Need
 
 ## Who We Are
 
-Integral Dragon is a software engineering transformation consultancy based in Minneapolis, Minnesota, specializing in building operational excellence for enterprise technology organizations. We work with US-based companies across industries to strengthen their engineering foundations through strategic improvements to People, Process, and Technology—then accelerate their business value through intelligent AI integration.
+Integral Dragon is a software engineering transformation consultancy specializing in building operational excellence for enterprise technology organizations. We work with US-based companies across industries to strengthen their engineering foundations through strategic improvements to People, Process, and Technology—then accelerate their business value through intelligent AI integration.
 
 Founded in 2025 by Dragon Sky, a former Platform Engineer at UnitedHealth Group with deep expertise in distributed systems, platforming, cloud architecture, and building high-performing engineering cultures, Integral Dragon brings decades of collective software engineering and consulting experience to every engagement.
 
@@ -121,13 +121,6 @@ Founder and technical leader with deep expertise in platform engineering, distri
 ### Scott Reel, Chief of Staff
 Operational leader ensuring seamless engagement execution and strategic alignment across all client initiatives.
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/team/danny-hoyt.png" alt="Danny Hoyt" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1rem auto; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
-</div>
-
-### Danny Hoyt, Enterprise Learning Strategist
-Organizational development expert with decades of consulting experience, designing learning pathways and change management strategies that ensure lasting transformation.
-
 ### Justin Schmidt, Platform Architect
 Senior engineering leader with decades of software engineering and consulting experience, driving technical excellence across client engagements.
 
@@ -150,4 +143,3 @@ Email us at **admin@integraldragon.com** to discuss your transformation opportun
 
 *©2025 Integral Dragon, LLC – All rights reserved*
 
-*Based in Minneapolis, Minnesota*
