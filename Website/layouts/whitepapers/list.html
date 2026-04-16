@@ -11,7 +11,7 @@ body {
 body.avenir { font-family: inherit; }
 main.pb7 { padding-bottom: 0 !important; }
 
-/* Nav */
+/* Nav — exact match to homepage nav */
 .wp-nav {
   position: sticky;
   top: 0;
@@ -23,7 +23,7 @@ main.pb7 { padding-bottom: 0 !important; }
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 28px;
-  height: 64px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,22 +37,22 @@ main.pb7 { padding-bottom: 0 !important; }
   flex-shrink: 0;
 }
 .wp-nav-logo {
-  height: 28px;
+  height: 32px;
   width: auto;
   filter: invert(1);
   display: block;
 }
 .wp-nav-name {
   color: #fff;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
 .wp-nav-home {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.75);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 500;
   white-space: nowrap;
   transition: color 0.15s;
@@ -88,6 +88,6 @@ main.pb7 { padding-bottom: 0 !important; }
 
 {{ define "footer" }}
 <footer style="background:#000;text-align:center;padding:22px 28px;border-top:1px solid #1c1c1c;">
-  <p style="color:rgba(255,255,255,0.3);font-size:16px;margin:0;">©2026 Integral Dragon, LLC – All rights reserved</p>
+  <p style="color:rgba(255,255,255,0.75);font-size:20px;margin:0;">©2026 Integral Dragon, LLC – All rights reserved</p>
 </footer>
 {{ end }}
