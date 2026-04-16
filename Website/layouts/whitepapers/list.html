@@ -1,0 +1,93 @@
+{{ define "head" }}
+<style>
+/* ---- White Papers page — minimal nav + content reset ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+               Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body.avenir { font-family: inherit; }
+main.pb7 { padding-bottom: 0 !important; }
+
+/* Nav */
+.wp-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #000;
+  border-bottom: 1px solid #1c1c1c;
+}
+.wp-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.wp-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.wp-nav-logo {
+  height: 28px;
+  width: auto;
+  filter: invert(1);
+  display: block;
+}
+.wp-nav-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.wp-nav-home {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+.wp-nav-home:hover { color: #fff; }
+
+/* Content area */
+.wp-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 52px 28px 88px;
+}
+</style>
+{{ end }}
+
+{{ define "header" }}
+<nav class="wp-nav">
+  <div class="wp-nav-inner">
+    <a class="wp-nav-brand" href="/">
+      <img src="/images/ID%20small%20logo.png" alt="Integral Dragon" class="wp-nav-logo">
+      <span class="wp-nav-name">Integral Dragon</span>
+    </a>
+    <a class="wp-nav-home" href="/">← Home</a>
+  </div>
+</nav>
+{{ end }}
+
+{{ define "main" }}
+<div class="wp-content">
+  {{ .Content }}
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<footer style="background:#000;text-align:center;padding:22px 28px;border-top:1px solid #1c1c1c;">
+  <p style="color:rgba(255,255,255,0.3);font-size:16px;margin:0;">©2026 Integral Dragon, LLC – All rights reserved</p>
+</footer>
+{{ end }}
